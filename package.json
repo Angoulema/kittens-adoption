@@ -2,7 +2,7 @@
   "name": "kittens-adoption",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://angoulema.github.io/kittens-for-adoption",
+  "homepage": "https://angoulema.github.io/kittens-adoption",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
