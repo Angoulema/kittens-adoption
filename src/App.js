@@ -23,7 +23,7 @@ const kittens = [
     name: 'Зося',
     dob: '16 июля 2025',
     description: 'Полосатый ангелочек с белыми митенками на лапках и неутолимыи стремлением к исследованию окружающего мира',
-    photos: ['/images/snowball1.jpg', '/images/snowball2.jpg'],
+    photos: ['/images/zofja1.jpg', '/images/zofja2.jpg'],
   },
   {
     id: 4,
