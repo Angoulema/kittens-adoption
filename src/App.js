@@ -9,35 +9,35 @@ const kittens = [
     name: 'Михаэла',
     dob: '16 июля 2025',
     description: 'Маленькой напоминала мишку, поэтому начали звать Мишкой, но оказалось, что это девочка :) Пушистая милаха, всегда готова поесть',
-    photos: ['/images/fluffy1.jpg', '/images/fluffy2.jpg'],
+    photos: ['/images/Misha1.jpg', '/images/Misha2.jpg', '/images/Misha3.jpg', '/images/Misha4.jpg'],
   },
   {
     id: 2,
     name: 'Тишка',
     dob: '16 июля 2025',
     description: 'Вначале был самым тихим, но в месячном возрасте открыл в себе любовь к исследованиям.',
-    photos: ['/images/mittens1.jpg', '/images/mittens2.jpg'],
+    photos: ['/images/Cisha1.jpg', '/images/Cisha2.jpg', '/images/Cisha3.jpg'],
   },
   {
     id: 3,
     name: 'Зося',
     dob: '16 июля 2025',
     description: 'Полосатый ангелочек с белыми митенками на лапках и неутолимыи стремлением к исследованию окружающего мира',
-    photos: ['/images/zofja1.jpg', '/images/zofja2.jpg'],
+    photos: ['/images/zofja1.jpg', '/images/zofja2.jpg', '/images/zofja3.jpg', '/images/zofja4.jpg', '/images/zofja5.jpg'],
   },
   {
     id: 4,
     name: 'Лея',
     dob: '16 июля 2025',
     description: 'Еще один полосатый ангелочек. Всегда готова попробовать на вкус брата и сестер :)',
-    photos: ['/images/whiskers1.jpg', '/images/whiskers2.jpg'],
+    photos: ['/images/Leia1.jpg', '/images/Leia2.jpg', '/images/Leia3.jpg', '/images/Leia4.jpg'],
   },
   {
     id: 5,
     name: 'Люсинда',
     dob: '16 июля 2025',
     description: 'Сначала была чёрненькой, но со временем обрела полосочки. Всегда готова к любому кипишу :)',
-    photos: ['/images/shadow1.jpg', '/images/shadow2.jpg'],
+    photos: ['/images/Lucy1.jpg', '/images/Lucy2.jpg', '/images/Lucy3.jpg'],
   },
 ];
 
@@ -62,7 +62,7 @@ const App = () => {
       </Typography>
       <Typography variant="h6" align="center" gutterBottom style={{ color: '#292571ff' }}>
         В начале июля в деревне к нашему дому прибрела очень худая беременная чёрная кошечка. Видимо, кто-то привёз и выкинул. Мы приютили ее в сарае (потому что наша родная кошка была совсем не в восторге от перспективы делить дом), и вскоре чёрная кошечка родила пятерых котят.
-        Мы очень надеемся, что каждый котёнок найдём себе новый дом и любящих хозяев. (И что тогда у нас получится подружить нашу кошку с новой.)
+        Мы очень надеемся, что каждый котёнок найдём себе новый дом и любящих хозяев. (И что тогда у нас получится подружить нашу кошку с новой.) Все котята самостоятельно едят, ходят в туалет в специально отведенное место (лоток с песком), любят играть друг с другом, бегать и исследовать окружающий мир.
       </Typography>
       <Grid container spacing={4}>
         {kittens.map((kitten) => (
