@@ -6,7 +6,7 @@ import { Container, Grid, Card, CardMedia, CardContent, Typography, Button } fro
 const kittens = [
   {
     id: 1,
-    name: 'Михаэла',
+    name: 'Михалина',
     dob: '16 июля 2025',
     description: 'Маленькой напоминала мишку, поэтому начали звать Мишкой, но оказалось, что это девочка :) Пушистая милаха, всегда готова поесть',
     photos: ['/images/Misha1.jpg', '/images/Misha2.jpg', '/images/Misha3.jpg', '/images/Misha4.jpg'],
@@ -16,7 +16,7 @@ const kittens = [
     name: 'Тишка',
     dob: '16 июля 2025',
     description: 'Вначале был самым тихим, но в месячном возрасте открыл в себе любовь к исследованиям.',
-    photos: ['/images/Cisha1.jpg', '/images/Cisha2.jpg', '/images/Cisha3.jpg'],
+    photos: ['/images/Cisha4.jpg', '/images/Cisha1.jpg', '/images/Cisha2.jpg', '/images/Cisha3.jpg'],
   },
   {
     id: 3,
@@ -37,15 +37,15 @@ const kittens = [
     name: 'Люсинда',
     dob: '16 июля 2025',
     description: 'Сначала была чёрненькой, но со временем обрела полосочки. Всегда готова к любому кипишу :)',
-    photos: ['/images/Lucy1.jpg', '/images/Lucy2.jpg', '/images/Lucy3.jpg'],
+    photos: ['/images/Lucy4.jpg', '/images/Lucy1.jpg', '/images/Lucy2.jpg', '/images/Lucy3.jpg'],
   },
 ];
 
 const motherCat = {
   name: 'Нюкта',
   dob: 'неизвестно',
-  description: 'Некрупная умная и ласковая кошка.',
-  photo: '/images/luna.jpg',
+  description: 'Некрупная умная и ласковая кошка. По словам ветеринара, ей год-полтора.',
+  photo: '/images/Niukta.jpg',
 };
 
 const responsive = {
@@ -58,16 +58,16 @@ const App = () => {
   return (
     <Container maxWidth="lg" style={{ backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
       <Typography variant="h3" align="center" gutterBottom style={{ color: '#6c63ff' }}>
-        Kittens for Adoption
+        Котята ищут дом
       </Typography>
-      <Typography variant="h7" align="center" gutterBottom style={{ color: '#292571ff' }}>
-        В начале июля в деревне к нашему дому прибрела очень худая беременная чёрная кошечка. Видимо, кто-то привёз и выкинул. Мы приютили ее в сарае (потому что наша родная кошка была совсем не в восторге от перспективы делить дом), и вскоре чёрная кошечка родила пятерых котят.
-        Мы очень надеемся, что каждый котёнок найдём себе новый дом и любящих хозяев. (И что тогда у нас получится подружить нашу кошку с новой.) Все котята самостоятельно едят, ходят в туалет в специально отведенное место (лоток с песком), любят играть друг с другом, бегать и исследовать окружающий мир.
+      <Typography variant="h7" align="center" gutterBottom style={{ color: '#292571ff', padding: '10px' }}>
+        В начале июля в деревне к нашему дому прибрела очень худая беременная чёрная кошечка. Видимо, кто-то привёз и выкинул. Мы приютили её в сарае (потому что наша родная кошка была совсем не в восторге от перспективы делить дом), и вскоре чёрная кошечка родила пятерых котят.
+        Мы очень надеемся, что каждый котёнок найдёт себе новый дом и любящих хозяев. (И что тогда у нас получится подружить нашу кошку с новой.) Все котята самостоятельно едят, ходят в туалет в специально отведенное место (лоток с песком), любят играть друг с другом, бегать и исследовать окружающий мир.
       </Typography>
   <Grid container spacing={4} justifyContent="center" alignItems="stretch">
         {kittens.map((kitten) => (
           <Grid item key={kitten.id} xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Card style={{ borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: '100%', maxWidth: '400px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+            <Card style={{ borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: '100%', maxWidth: '410px', display: 'flex', flexDirection: 'column', flex: 1 }}>
               <Carousel responsive={responsive}>
                 {kitten.photos.map((photo, index) => (
                   <CardMedia
@@ -75,7 +75,7 @@ const App = () => {
                     component="img"
                     image={process.env.PUBLIC_URL + photo}
                     alt={kitten.name}
-                    style={{ height: '400px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
+                    style={{ height: '500px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
                   />
                 ))}
               </Carousel>
@@ -101,7 +101,7 @@ const App = () => {
               component="img"
               image={process.env.PUBLIC_URL + motherCat.photo}
               alt={motherCat.name}
-              style={{ height: '400px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
+              style={{ height: '500px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
             />
             <CardContent>
               <Typography variant="h5" style={{ color: '#6c63ff' }}>
@@ -125,8 +125,9 @@ const App = () => {
                 Контакты
               </Typography>
               <Typography variant="body1">
-                Если вы заинтересованы в каком-то из котят, звоните или пишите:
+                Если вы заинтересованы в каком-то из котят, звоните или пишите.
               </Typography>
+              <Typography variant="body1">Территориально котята находятся в Минской области.</Typography>
               <Typography variant="body1">
                 <strong>Телефон (+вайбер):</strong> +375 33 367-38-83, Евгения
               </Typography>
