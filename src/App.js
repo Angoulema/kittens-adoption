@@ -56,26 +56,26 @@ const responsive = {
 
 const App = () => {
   return (
-    <Container style={{ backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+    <Container maxWidth="lg" style={{ backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
       <Typography variant="h3" align="center" gutterBottom style={{ color: '#6c63ff' }}>
         Kittens for Adoption
       </Typography>
-      <Typography variant="h6" align="center" gutterBottom style={{ color: '#292571ff' }}>
+      <Typography variant="h7" align="center" gutterBottom style={{ color: '#292571ff' }}>
         В начале июля в деревне к нашему дому прибрела очень худая беременная чёрная кошечка. Видимо, кто-то привёз и выкинул. Мы приютили ее в сарае (потому что наша родная кошка была совсем не в восторге от перспективы делить дом), и вскоре чёрная кошечка родила пятерых котят.
         Мы очень надеемся, что каждый котёнок найдём себе новый дом и любящих хозяев. (И что тогда у нас получится подружить нашу кошку с новой.) Все котята самостоятельно едят, ходят в туалет в специально отведенное место (лоток с песком), любят играть друг с другом, бегать и исследовать окружающий мир.
       </Typography>
-      <Grid container spacing={4}>
+  <Grid container spacing={4} justifyContent="center" alignItems="stretch">
         {kittens.map((kitten) => (
-          <Grid item key={kitten.id} xs={12} sm={6} md={4}>
-            <Card style={{ borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+          <Grid item key={kitten.id} xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Card style={{ borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: '100%', maxWidth: '400px', display: 'flex', flexDirection: 'column', flex: 1 }}>
               <Carousel responsive={responsive}>
                 {kitten.photos.map((photo, index) => (
                   <CardMedia
                     key={index}
                     component="img"
-                    image={photo}
+                    image={process.env.PUBLIC_URL + photo}
                     alt={kitten.name}
-                    style={{ height: '200px', objectFit: 'cover' }}
+                    style={{ height: '400px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
                   />
                 ))}
               </Carousel>
@@ -99,9 +99,9 @@ const App = () => {
           <Card style={{ borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
             <CardMedia
               component="img"
-              image={motherCat.photo}
+              image={process.env.PUBLIC_URL + motherCat.photo}
               alt={motherCat.name}
-              style={{ height: '300px', objectFit: 'cover' }}
+              style={{ height: '400px', maxWidth: '100%', objectFit: 'contain', backgroundColor: '#f0f0f0' }}
             />
             <CardContent>
               <Typography variant="h5" style={{ color: '#6c63ff' }}>
