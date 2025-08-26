@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/kittens-adoption/static/css/main.5e4c381e.css",
-    "main.js": "/kittens-adoption/static/js/main.68b8fd26.js",
+    "main.js": "/kittens-adoption/static/js/main.e9fc626b.js",
     "static/js/453.8b190242.chunk.js": "/kittens-adoption/static/js/453.8b190242.chunk.js",
     "static/media/revicons.eot": "/kittens-adoption/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/kittens-adoption/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/kittens-adoption/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/kittens-adoption/index.html",
     "main.5e4c381e.css.map": "/kittens-adoption/static/css/main.5e4c381e.css.map",
-    "main.68b8fd26.js.map": "/kittens-adoption/static/js/main.68b8fd26.js.map",
+    "main.e9fc626b.js.map": "/kittens-adoption/static/js/main.e9fc626b.js.map",
     "453.8b190242.chunk.js.map": "/kittens-adoption/static/js/453.8b190242.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e4c381e.css",
-    "static/js/main.68b8fd26.js"
+    "static/js/main.e9fc626b.js"
   ]
 }
